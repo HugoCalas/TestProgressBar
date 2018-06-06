@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="334dp"
+        android:layout_height="305dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="342dp"
+        android:layout_height="19dp"
+        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="66dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoView" />
+
+    <Button
+        android:id="@+id/b_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="258dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="258dp"
+        android:layout_marginStart="38dp"
+        android:text="Play"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoView" />
+
+</android.support.constraint.ConstraintLayout>
